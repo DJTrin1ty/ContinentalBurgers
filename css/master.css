@@ -48,11 +48,85 @@ table {
 }
 
 /* Jumbotron */
+.jumbotron {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	height: 100vh;
+	background: url("../images/burger.jpg") no-repeat center center;
+}
 
+.jumbotron h1 {
+	color: white;
+	text-align: center;
+	font-size: 4.5em;
+	padding-top: 7%;
+}
 /* About */
 
 /* Menu */
 
 /* Contact */
+.contact {
+	width: 100%;
+}
+
+.quad {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 99%;
+	margin: 0 auto;
+}
+
+.google iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.big {
+	width: 98%;
+	border: 2px solid black;
+}
+
+.small {
+	width: 49%;
+	line-height: 2;
+	text-transform: uppercase;
+	text-align: center;
+	border: none;
+}
+
+.quad div {
+	height: 400px;
+}
+
+.hours ul {
+	margin: 20px;
+}
+
+.hours li {
+	list-style: none;
+}
 
 /* Footer */
+
+
+/* Responsive */
+@media screen and (min-width: 1024px){
+	.quad {
+		width: 80%;
+		/*width: 1024px;*/
+		margin: 0 auto;
+	}
+	.big {
+		width: 60%;
+	}
+	.small {
+		width: 36%;
+		border: 2px solid black;
+	}
+	.quad div {
+		margin: 0.5%;
+	}
+}
