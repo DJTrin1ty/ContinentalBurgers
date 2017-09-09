@@ -11,12 +11,15 @@
     <div class="jumbotron">
       <h1>Continental Burger</h1>
     </div>
+
     <div class="about component">
       <h1>About</h1>
     </div>
+
     <div class="menu component">
       <h1>Menu</h1>
     </div>
+
     <div class="contact component">
       <h1>Contact</h1>
       <div class="quad">
@@ -24,19 +27,41 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.8703002178563!2d-117.81428718444862!3d34.021540026794135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32c68bdf83a93%3A0xca54943d529a87dc!2s233+Gentle+Springs+Ln%2C+Diamond+Bar%2C+CA+91765!5e0!3m2!1sen!2sus!4v1504601994744" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="small hours">
-          <ul>
-            <li>Store Hours</li>
-            <li>Everyday: 6:30am-9:30pm</li>
-          </ul>
-          <p>233 Gentle Springs Ln</p>
-          <p>Diamond Bar, CA 91765</p>
-          <p>(909) 860 - 2226</p>
+          <p class="header">Store Info</p>
+          <div class="content">
+            <ul>
+              <li>233 Gentle Springs Ln</li>
+              <li>Diamond Bar, CA 91765</li>
+            </ul>
+            <ul>
+              <li>(909) 860 - 2226</li>
+            </ul>
+            <ul>
+              <li>Store Hours</li>
+              <li>Everyday: 6:30am-9:30pm</li>
+            </ul>
+          </div>
         </div>
-        <div class="small info">
-
+        <div class="small">
+          <p class="header">Other Info</p>
         </div>
-        <div class="big icons">
-
+        <div class="big form">
+          <p class="header">Contact Us</p>
+          <form method="POST" action="http://formspree.io/admissions@leveluplabs.io">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="message">
+              <label for="message">Message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
     </div>
