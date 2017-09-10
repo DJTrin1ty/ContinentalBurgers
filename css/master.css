@@ -50,7 +50,7 @@ table {
 
 /* Jumbotron */
 .jumbotron {
-	font-family: sans-serif;
+	font-family: 'Cantata One';
 	text-transform: uppercase;
 	height: 100vh;
 	width: 100vw;
@@ -91,7 +91,7 @@ span.reveal {
 	width: 88%;
 	top: -50%;
 	padding: 10px 15px;
-	font-size: 5em;
+	font-size: 4em;
 	letter-spacing: 7px;
 	text-align: center;
 	transition: all 2.5s ease;
@@ -270,6 +270,11 @@ form input:focus, form textarea:focus {
 
 
 /* Responsive */
+@media screen and (max-width: 767px){
+	.playgrounds, .curtain {
+		display: none;
+	}
+}
 @media screen and (min-width: 768px){
 	.quad {
 		flex-direction: row;

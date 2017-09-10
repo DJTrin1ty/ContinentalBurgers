@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $('.left').animate({'left':'100%'})
   $('.right').animate({'right':'100%'})
 
