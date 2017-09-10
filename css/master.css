@@ -66,6 +66,28 @@ table {
 
 /* Menu */
 
+.menu-container ul {
+	display: flex;
+	justify-content: center;
+}
+
+.menu-container li {
+	padding: 10px 50px;
+}
+
+.menu-list {
+	display: flex;
+	justify-content: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.reveal {
+	display:block;
+}
+
 /* Contact */
 .contact {
 	width: 100%;
