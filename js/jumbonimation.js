@@ -19,5 +19,7 @@ $(document).ready(function(){
       $('.playgrounds h2').addClass('shadow');
   }, 5500);
 
-
+  setTimeout(function(){
+    $('.burger').addClass('revealer');
+  }, 6000);
 })

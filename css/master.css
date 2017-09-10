@@ -67,7 +67,7 @@ table {
 	justify-content: center;
 }
 
-.jumbotron img {
+.jumbotron .icon {
 	height: 750px;
 	width: 750px;
 }
@@ -89,12 +89,23 @@ span.reveal {
 	background-color: white;
 	border: 5px solid black;
 	width: 88%;
-	top: -25%;
+	top: -50%;
 	padding: 10px 15px;
 	font-size: 5em;
 	letter-spacing: 7px;
 	text-align: center;
 	transition: all 2.5s ease;
+}
+
+.burger {
+	position: absolute;
+	bottom: -80%;
+	width: 100%;
+}
+
+img.revealer {
+	bottom: -10%;
+	transition: all 2s ease;
 }
 
 .shadow {
