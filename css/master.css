@@ -53,14 +53,71 @@ table {
 	font-family: sans-serif;
 	text-transform: uppercase;
 	height: 100vh;
-	background: url("../images/burger.jpg") no-repeat center center;
+	width: 100vw;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
-.jumbotron h1 {
-	color: white;
+.playgrounds {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.jumbotron img {
+	height: 750px;
+	width: 750px;
+}
+
+.playgrounds span {
+	display: inline-block;
+	transform: rotateY(-90deg);
+	transition: all 3s ease;
+	opacity: 0;
+}
+
+span.reveal {
+	transform: rotateY(0deg);
+	opacity: 1;
+}
+
+.jumbotron h2 {
+	position: absolute;
+	background-color: white;
+	border: 5px solid black;
+	width: 88%;
+	top: -25%;
+	padding: 10px 15px;
+	font-size: 5em;
+	letter-spacing: 7px;
 	text-align: center;
-	font-size: 1em;
-	padding-top: 7%;
+	transition: all 2.5s ease;
+}
+
+.shadow {
+	box-shadow: 3px 3px 4px #212121;
+}
+
+.curtain {
+	background-color: white;
+	z-index: 5;
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	transition: all 5s ease;
+}
+
+.left {
+	left: 40%;
+	top: 0;
+}
+
+.right {
+	right: 40%;
+	top:0;
 }
 /* About */
 
