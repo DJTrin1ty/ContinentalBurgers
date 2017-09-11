@@ -63,8 +63,9 @@ table {
 }
 
 .mobiletron {
-	height: 100vh;
+	height: 96vh;
 	width: 100vw;
+	margin: 2vh 0;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -80,6 +81,7 @@ table {
 	align-items: center;
 	text-align: center;
 	font-size: 3em;
+	text-shadow: 3px 3px 1px darkgrey;
 }
 
 div.special {
@@ -88,6 +90,7 @@ div.special {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 1.5em;
+	text-shadow: 2px 2px 1px darkgrey;
 }
 
 
