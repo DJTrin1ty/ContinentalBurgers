@@ -153,7 +153,7 @@ img.revealer {
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	height: 450px;
-	background-color: #00adad;
+	/*background-color: #00adad;*/
 }
 
 .hours {
@@ -169,7 +169,7 @@ img.revealer {
 }
 
 .content li {
-	color: #fffc7c;
+	/*color: #fffc7c;*/
 	margin: 5px 0px;
 }
 
@@ -195,17 +195,17 @@ img.revealer {
 }
 
 .small .header {
-	color: #fffc7c;
-	background-color: #004c4c;
+	/*color: #fffc7c;*/
+	/*background-color: #004c4c;*/
 }
 
 .form .header {
-	color: #004c4c;
-	background-color: #fffc7c;
+	/*color: #004c4c;*/
+	/*background-color: #fffc7c;*/
 }
 
 form div {
-	border: 2px solid #006161;
+	/*border: 2px solid #006161;*/
 	padding: 10px;
 	margin: 15px 0px;
 	border-radius: 20px;
