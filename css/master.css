@@ -140,12 +140,43 @@ img.revealer {
 }
 
 .menu-container li {
-	padding: 10px 50px;
+	padding: 20px 50px;
+	font-family: 'Nunito';
+	font-size: 32px;
+	margin-bottom: 50px;
 }
 
 .menu-list {
 	display: flex;
 	justify-content: center;
+}
+
+.menu-list li {
+	font-family: 'Nunito';
+	font-size: 24px;
+	line-height: 25px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.description {
+	font-family: 'Nunito';
+	font-size: 18px;
+	font-weight: 200;
+}
+
+.menu-header {
+	font-family: 'Nunito';
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.menu-note {
+	font-family: 'Nunito';
+	font-size: 18px;
+	font-weight: 500;
+	color: grey;
 }
 
 .hidden {
