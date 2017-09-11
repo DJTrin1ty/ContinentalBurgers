@@ -50,15 +50,50 @@ table {
 
 /* Jumbotron */
 .jumbotron {
+	display: none;
+	height: 0;
 	font-family: 'Cantata One';
 	text-transform: uppercase;
-	height: 100vh;
 	width: 100vw;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+}
+
+.mobiletron {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.mobiletron > p, .mobiletron > div {
+	width: 30%;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 3em;
+}
+
+div.special {
+	width: 65%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+
+.mobiletron img {
+	/*width: 90%;*/
+	width: 50%;
 }
 
 .playgrounds {
@@ -140,7 +175,7 @@ img.revealer {
 }
 
 .menu-container li {
-	padding: 10px 50px;
+	/*padding: 10px 50px;*/
 }
 
 .menu-list {
@@ -309,6 +344,13 @@ form input:focus, form textarea:focus {
 	}
 	form div {
 		width: 350px;
+	}
+	.mobiletron {
+		display: none;
+	}
+	.jumbotron {
+		display: flex;
+		height: 100vh;
 	}
 }
 
