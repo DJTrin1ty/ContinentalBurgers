@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   $('.left').animate({'left':'100%'})
   $('.right').animate({'right':'100%'})
+  $('.icon').addClass('peek');
 
   $('.playgrounds h2').delay(1500).animate({'top':'13%'})
 
@@ -9,12 +10,12 @@ $(document).ready(function(){
     let delayer = 1000;
     $('.playgrounds span').each(function(){
       let temp = $(this);
-      delayer += 200;
+      delayer += 150;
       setTimeout(function(){
         temp.addClass('reveal');
       }, delayer);
     })
-  }, 2700);
+  }, 2400);
 
   setTimeout(function(){
       $('.playgrounds h2').addClass('shadow');
@@ -22,5 +23,5 @@ $(document).ready(function(){
 
   setTimeout(function(){
     $('.burger').addClass('revealer');
-  }, 6000);
+  }, 4500);
 })

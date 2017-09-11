@@ -132,18 +132,29 @@ span.reveal {
 	font-size: 4em;
 	letter-spacing: 7px;
 	text-align: center;
-	transition: all 2.5s ease;
+	transition: all 2s ease;
 }
 
+
+.icon {
+	opacity: 0;
+}
+
+img.peek {
+	opacity: 1;
+	transition: all 3s linear;
+}
 .burger {
 	position: absolute;
 	bottom: -80%;
 	width: 100%;
+	opacity: 0.5;
 }
 
 img.revealer {
 	bottom: -10%;
 	transition: all 2s ease;
+	opacity: 1;
 }
 
 .shadow {
