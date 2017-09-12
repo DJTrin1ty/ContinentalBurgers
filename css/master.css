@@ -63,7 +63,7 @@ nav {
 	padding: 10px 0px;
 }
 
-nav div {
+nav > div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -73,10 +73,27 @@ nav div {
 	font-family: 'Nunito';
 	width: 100%;
 	font-size: 12px;
-	display: none;
-	justify-content: space-around;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	padding: 8px 0px;
+}
+
+.ninfo p {
+	margin: 0px 10px;
+	font-size: 16px;
+}
+
+.rninfo {
+	position: absolute;
+	right: 2vw;
+	display: none;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.rninfo p {
+	margin: 0px 10px;
 }
 
 .n-number {
@@ -505,15 +522,12 @@ form input:focus, form textarea:focus {
 	nav img {
 		margin: 0;
 	}
+	.ninfo p {
+		font-size: 13px;
+	}
 }
 @media screen and (max-width: 767px){
 	.playgrounds, .curtain {
-		display: none;
-	}
-	.ninfo {
-		display: flex;
-	}
-	.n-number, .n-hours {
 		display: none;
 	}
 }
@@ -555,16 +569,11 @@ form input:focus, form textarea:focus {
 	}
 
 	@media screen and (min-width: 1110px){
-		div.s-address {
-			bottom: 4vh;
-			left: 2vh;
-			top: unset;
-		}
-		.s-hours, .s-number {
-			display: block;
-		}
-		.s-combined {
+		.ninfo {
 			display: none;
+		}
+		.rninfo {
+			display: flex;
 		}
 	}
 }
