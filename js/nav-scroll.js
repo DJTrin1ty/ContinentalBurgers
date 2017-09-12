@@ -28,8 +28,6 @@ function navbarMe(){
 
   $nt = $('.about');
   let ntViewTop = $nt.offset().top + 50;
-  console.log('dvb: ' + docViewBot)
-  console.log('nVt: ' + ntViewTop)
   if (ntViewTop < docViewBot){
     $('nav').addClass("nav-appear");
     $('nav div').addClass("faded");
