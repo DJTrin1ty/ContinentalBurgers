@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: 'Nunito';
+	background-color: white;
 }
 ol, ul {
 	list-style: none;
@@ -60,6 +61,37 @@ table {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+}
+
+.jinfo {
+	position: absolute;
+}
+
+.s-number {
+	top: 4vh;
+	right: 2vw;
+	display: none;
+}
+
+.s-hours {
+	bottom: 4vh;
+	right: 2vw;
+	display: none;
+}
+
+.s-address {
+	top: 4vh;
+	left: 2vw;
+}
+
+.s-combined {
+	top: 4vh;
+	right: 2vw;
+	display: block;
+}
+
+.jinfo p {
+	line-height: 1.5;
 }
 
 .mobiletron {
@@ -381,5 +413,19 @@ form input:focus, form textarea:focus {
 		width: 400px;
 		border: 2px solid black;
 		margin-bottom: 15px;
+	}
+
+	@media screen and (min-width: 1110px){
+		div.s-address {
+			bottom: 4vh;
+			left: 2vh;
+			top: unset;
+		}
+		.s-hours, .s-number {
+			display: block;
+		}
+		.s-combined {
+			display: none;
+		}
 	}
 }
