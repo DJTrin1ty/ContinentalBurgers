@@ -131,6 +131,20 @@ div.special {
 	width: 50%;
 }
 
+div.minfo {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+}
+
+div.minfo > p {
+	margin: 0px 20px;
+	text-shadow: none;
+}
+
 .playgrounds {
 	position: relative;
 	display: flex;
@@ -373,6 +387,11 @@ form input:focus, form textarea:focus {
 
 
 /* Responsive */
+@media screen and (max-width: 500px){
+	div.minfo > p {
+		font-size: 10px;
+	}
+}
 @media screen and (max-width: 767px){
 	.playgrounds, .curtain {
 		display: none;
