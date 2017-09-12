@@ -477,6 +477,17 @@ form input:focus, form textarea:focus {
 	div.minfo > p {
 		font-size: 10px;
 	}
+	nav li {
+		font-size: 13px;
+		margin: 0 10px;
+	}
+	nav div {
+		width: 100%;
+		justify-content: space-around;
+	}
+	nav img {
+		margin: 0;
+	}
 }
 @media screen and (max-width: 767px){
 	.playgrounds, .curtain {
