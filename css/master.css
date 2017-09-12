@@ -211,7 +211,6 @@ span.reveal {
 	transition: all 2s ease;
 }
 
-
 .icon {
 	opacity: 0;
 }
@@ -287,6 +286,9 @@ img.revealer {
 .lunch {
 	display: flex;
 	flex-direction: row;
+}
+
+.para {
 	width: 100%;
 }
 
@@ -315,7 +317,7 @@ img.revealer {
 }
 
 .reveal {
-	display:block;
+	display: flex;
 }
 
 /* Contact */
