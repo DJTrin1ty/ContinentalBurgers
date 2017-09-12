@@ -5,14 +5,34 @@
     <title>Continental Burger</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/master.css"></link>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/nav-scroll.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Cantata+One" rel="stylesheet">
   </head>
   <body>
+    <nav>
+      <div>
+        <li id="home">Home</li>
+        <li id="about">About</li>
+        <img src="./images/bwburger.svg"/>
+        <li id="menu">Menu</li>
+        <li id="contact">Contact</li>
+      </div>
+    </nav>
     <div class="jumbotron">
+      <p class="jinfo s-number">T: (909) 860 - 2226</p>
+      <p class="jinfo s-hours">Hours: 6:30am-9:30pm</p>
+      <div class="jinfo s-combined">
+        <p>T: (909) 860 - 2226</p>
+        <p>Hours: 6:30am-9:30pm</p>
+      </div>
+      <div class="jinfo s-address">
+        <p>233 Gentle Springs Ln</p>
+        <p>Diamond Bar, CA 91765</p>
+      </div>
       <div class="playgrounds">
         <img class="icon" src="./images/bwburger.svg"/>
         <img class="burger" src="./images/burger.png"/>
@@ -20,6 +40,35 @@
       </div>
       <div class="curtain left"></div>
       <div class="curtain right"></div>
+    </div>
+    <div class="mobiletron">
+      <p data-parallax='{"y":-900}'>C</p>
+      <p data-parallax='{"y":-700}'>O</p>
+      <p data-parallax='{"y":-1900}'>N</p>
+      <p data-parallax='{"y":-1300}'>T</p>
+      <p data-parallax='{"y":-900}'>I</p>
+      <p data-parallax='{"y":-700}'>N</p>
+      <p data-parallax='{"y":-1900}'>E</p>
+      <p data-parallax='{"y":-3000}'>N</p>
+      <p data-parallax='{"y":-2300}'>T</p>
+      <p data-parallax='{"y":-1800}'>A</p>
+      <p data-parallax='{"y":-2100}'>L</p>
+      <div data-parallax='{"y":-950}'>
+        <img src="./images/bwburger.svg"/>
+      </div>
+      <div class="special">
+        <p>B</p>
+        <p>U</p>
+        <p>R</p>
+        <p>G</p>
+        <p>E</p>
+        <p>R</p>
+        <p>S</p>
+      </div>
+      <div class="minfo">
+        <p class="m-number">T: (909) 860 - 2226</p>
+        <p class="m-hours">Hours: 6:30am-9:30pm</p>
+      </div>
     </div>
 
     <div class="about component">
@@ -53,8 +102,7 @@
             </ul>
           </div>
         </div>
-        <div class="lunch hidden">
-          <div class="menu-header">Sandwiches
+        <div class="lunch">
             <ul>
               <li>Pastrami<p class="description">Mustard and pickles on a French roll / $8</p></li>
               <li>Rib-Eye Steak<p class="description">Mayo, lettuce and tomatoes on a French roll / $8</p></li>
@@ -74,8 +122,6 @@
               <li>Club<p class="description">Ham, turkey, bacon, American cheese, mayo, lettuce, and tomato on toast / $7.50</p></li>
               <li>Gyro<p class="description">Pita bread with onion, tomatoes, and tzatziki sauce / $6</p></li>
             </ul>
-          </div>
-          <div class="menu-header">Burgers
             <ul>  
               <li>Continental Hamburger<p class="description">$5.79</p></li>
               <li>1/4 Lb. Hamburger<p class="description">Thousand island sauce, onions, lettuce, tomatoes and pickles / $3.69</p></li>
@@ -88,8 +134,6 @@
               <li>Veggie Burger<p class="description">Thousand island sauce, onions, lettuce, tomatoes and pickles / $5.25</p></li>
               <li>Turkey Burger<p class="description">Onions, lettuce, tomatoes and pickles on wheat bread / $5</p></li>
             </ul>
-          </div>
-        </div>
         <div>
           <ul class="dinner hidden">
             <li>wine</li>
@@ -109,17 +153,26 @@
         <div class="small hours">
           <p class="header">Store Info</p>
           <div class="content">
-            <ul>
-              <li>233 Gentle Springs Ln</li>
-              <li>Diamond Bar, CA 91765</li>
-            </ul>
-            <ul>
-              <li>(909) 860 - 2226</li>
-            </ul>
-            <ul>
-              <li>Store Hours</li>
-              <li>Everyday: 6:30am-9:30pm</li>
-            </ul>
+            <div>
+              <img src="./images/location.png"/>
+              <ul class="double">
+                <li>233 Gentle Springs Ln</li>
+                <li>Diamond Bar, CA 91765</li>
+              </ul>
+            </div>
+            <div>
+              <img src="./images/phone-icon.png"/>
+              <ul>
+                <li>(909) 860 - 2226</li>
+              </ul>
+            </div>
+            <div>
+              <img src="./images/clock.png"/>
+              <ul class="double">
+                <li>Everyday</li>
+                <li>6:30am-9:30pm</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="small">
