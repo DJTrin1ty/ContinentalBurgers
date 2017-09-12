@@ -52,34 +52,43 @@ table {
 /* Nav */
 nav {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: fixed;
 	overflow: hidden;
 	width: 100%;
 	background-color: white;
 	border-bottom: 1px solid lightgray;
 	z-index: 20;
-	height: 0px;
-	transition: all 1s ease;
-}
-
-.nav-appear {
-	height: 60px;
-	transition: all 1s ease;
+	padding: 10px 0px;
 }
 
 nav div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	opacity: 0;
-	transition: all 0.3s linear;
 }
 
-.faded {
-	transition: all 0.3s ease-in 0.4s;
-	opacity: 1;
+.ninfo {
+	font-family: 'Nunito';
+	width: 100%;
+	font-size: 12px;
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+	padding: 8px 0px;
+}
+
+.n-number {
+	position: absolute;
+	left: 2vw;
+	font-size: 12px;
+}
+
+.n-hours {
+	position: absolute;
+	right: 2vw;
+	font-size: 12px;
 }
 
 nav img {
@@ -110,40 +119,9 @@ nav li:hover {
 	overflow: hidden;
 }
 
-.jinfo {
-	position: absolute;
-	font-family: 'Nunito';
-}
-
-.s-number {
-	top: 4vh;
-	right: 2vw;
-	display: none;
-}
-
-.s-hours {
-	bottom: 4vh;
-	right: 2vw;
-	display: none;
-}
-
-.s-address {
-	top: 4vh;
-	left: 2vw;
-}
-
-.s-combined {
-	top: 4vh;
-	right: 2vw;
-	display: block;
-}
-
-.jinfo p {
-	line-height: 1.5;
-}
 
 .mobiletron {
-	height: 96vh;
+	height: 94vh;
 	width: 100vw;
 	margin: 2vh 0;
 	display: flex;
@@ -491,6 +469,12 @@ form input:focus, form textarea:focus {
 }
 @media screen and (max-width: 767px){
 	.playgrounds, .curtain {
+		display: none;
+	}
+	.ninfo {
+		display: flex;
+	}
+	.n-number, .n-hours {
 		display: none;
 	}
 }
