@@ -273,14 +273,32 @@ img.revealer {
 }
 /* About */
 
+.about-container {
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.about-us {
+	font-family: 'Nunito';
+	font-size: 24px;
+	line-height: 25px;
+	width: 50%;
+	margin: 75`px;
+}
+
+.image-slider {
+	width: 50%;
+}
+
 /* Menu */
 
-.menu-container ul {
+.list-container ul {
 	display: flex;
 	justify-content: center;
 }
 
-.menu-container li {
+.list-container li {
 	padding: 20px 50px;
 	font-family: 'Nunito';
 	font-size: 32px;
@@ -300,13 +318,8 @@ img.revealer {
 	margin-bottom: 15px;
 }
 
-.lunch {
-	display: flex;
-	flex-direction: row;
-}
-
-.para {
-	width: 100%;
+.menu-container {
+	margin: 0 15px;
 }
 
 .description {
@@ -319,7 +332,8 @@ img.revealer {
 	font-family: 'Nunito';
 	font-size: 36px;
 	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
+	margin-top: 40px;
 }
 
 .menu-note {
@@ -335,6 +349,10 @@ img.revealer {
 
 .reveal {
 	display: flex;
+}
+
+.menu-spacer {
+	margin: 0 100px;
 }
 
 /* Contact */

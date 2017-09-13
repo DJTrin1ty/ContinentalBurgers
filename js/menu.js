@@ -3,13 +3,17 @@ $(document).ready(function() {
         $('.breakfast').siblings().removeClass('reveal');
         $('.breakfast').addClass('reveal');
     })
-    $('.lunch-btn').click(function() {
-        $('.lunch').siblings().removeClass('reveal');
-        $('.lunch').addClass('reveal');
+    $('.burgers-btn').click(function() {
+        $('.burgers').siblings().removeClass('reveal');
+        $('.burgers').addClass('reveal');
     })
-    $('.dinner-btn').click(function() {
-        $('.dinner').siblings().removeClass('reveal');
-        $('.dinner').addClass('reveal');
+    $('.platters-btn').click(function() {
+        $('.platters').siblings().removeClass('reveal');
+        $('.platters').addClass('reveal');
+    })
+    $('.sideorders-btn').click(function() {
+        $('.side-orders').siblings().removeClass('reveal');
+        $('.side-orders').addClass('reveal');
     })
 });
 
