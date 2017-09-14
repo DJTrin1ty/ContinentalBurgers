@@ -392,6 +392,10 @@ img.revealer {
 	color: white;
 }
 
+.slideshow p {
+	display: none;
+}
+
 .small .header {
 	/*color: #fffc7c;*/
 	/*background-color: #004c4c;*/
