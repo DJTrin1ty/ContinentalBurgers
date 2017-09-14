@@ -228,7 +228,6 @@ span.reveal {
 	transition: all 2s ease;
 }
 
-
 .icon {
 	opacity: 0;
 }
@@ -274,15 +273,36 @@ img.revealer {
 }
 /* About */
 
+.about-container {
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.about-us {
+	font-family: 'Nunito';
+	font-size: 24px;
+	line-height: 25px;
+	width: 50%;
+	margin: 75`px;
+}
+
+.image-slider {
+	width: 50%;
+}
+
 /* Menu */
 
-.menu-container ul {
+.list-container ul {
 	display: flex;
 	justify-content: center;
 }
 
-.menu-container li {
-	/*padding: 10px 50px;*/
+.list-container li {
+	padding: 20px 50px;
+	font-family: 'Nunito';
+	font-size: 32px;
+	margin-bottom: 50px;
 }
 
 .menu-list {
@@ -290,12 +310,49 @@ img.revealer {
 	justify-content: center;
 }
 
+.menu-list li {
+	font-family: 'Nunito';
+	font-size: 24px;
+	line-height: 25px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.menu-container {
+	margin: 0 15px;
+}
+
+.description {
+	font-family: 'Nunito';
+	font-size: 18px;
+	font-weight: 200;
+}
+
+.menu-header {
+	font-family: 'Nunito';
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 25px;
+	margin-top: 40px;
+}
+
+.menu-note {
+	font-family: 'Nunito';
+	font-size: 18px;
+	font-weight: 500;
+	color: grey;
+}
+
 .hidden {
 	display: none;
 }
 
 .reveal {
-	display:block;
+	display: flex;
+}
+
+.menu-spacer {
+	margin: 0 100px;
 }
 
 /* Contact */
