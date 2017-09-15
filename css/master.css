@@ -134,6 +134,8 @@ nav li:hover {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	background: url("../images/jumboback.jpg") no-repeat center center;
+	background-size: cover;
 }
 
 
