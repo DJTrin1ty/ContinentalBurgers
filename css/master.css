@@ -148,6 +148,8 @@ nav li:hover {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	background: url("../images/mobileback.jpg") no-repeat center center;
+	background-size: cover;
 }
 
 .mobiletron > p, .mobiletron > div {
@@ -158,7 +160,8 @@ nav li:hover {
 	align-items: center;
 	text-align: center;
 	font-size: 3em;
-	text-shadow: 3px 3px 1px darkgrey;
+	text-shadow: 3px 3px 1px black;
+	color: white;
 }
 
 div.special {
