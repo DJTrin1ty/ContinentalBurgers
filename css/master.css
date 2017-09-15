@@ -289,7 +289,8 @@ img.revealer {
 	font-size: 24px;
 	line-height: 25px;
 	width: 50%;
-	margin: 75`px;
+	margin: 75px;
+	line-height: 35px;
 }
 
 .image-slider {
@@ -310,6 +311,10 @@ img.revealer {
 	margin-bottom: 50px;
 }
 
+.list-container li a:hover {
+	cursor: pointer;
+}
+
 .menu-list {
 	display: flex;
 	justify-content: center;
@@ -327,25 +332,32 @@ img.revealer {
 	margin: 0 15px;
 }
 
+.menu-container ul li {
+	color: #a77a33;
+}
+
 .description {
 	font-family: 'Nunito';
 	font-size: 18px;
 	font-weight: 200;
+	font-style: italic;
+	color: #575757;
 }
 
 .menu-header {
 	font-family: 'Nunito';
 	font-size: 36px;
 	font-weight: 500;
-	margin-bottom: 25px;
 	margin-top: 40px;
+	margin-bottom: 28px;
 }
 
 .menu-note {
 	font-family: 'Nunito';
 	font-size: 18px;
 	font-weight: 500;
-	color: grey;
+	color: #575757;
+	font-style: italic;
 }
 
 .hidden {
