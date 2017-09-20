@@ -262,18 +262,18 @@ img.revealer {
 	background-color: white;
 	z-index: 5;
 	position: absolute;
-	width: 90%;
+	width: 55%;
 	height: 100%;
-	transition: all 5s ease;
+	transition: all 3.5s ease;
 }
 
 .left {
-	left: 40%;
+	left: 0;
 	top: 0;
 }
 
 .right {
-	right: 40%;
+	right: 0;
 	top:0;
 }
 /* About */
