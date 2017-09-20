@@ -134,7 +134,7 @@ nav li:hover {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	background: url("../images/jumboback.jpg") no-repeat center center;
+	background: url("../images/background2.jpg") no-repeat center center;
 	background-size: cover;
 }
 
@@ -287,21 +287,20 @@ img.revealer {
 .about-us {
 	font-family: 'Nunito';
 	font-size: 24px;
-	line-height: 25px;
-	width: 50%;
-	margin: 75px;
+	width:50%;
+	margin: 0 auto;
 	line-height: 35px;
 }
 
-.image-slider {
-	width: 50%;
+.image-slider img{
+	width: 100%;
 }
 
 /* Menu */
 
-.menu {
-	background: url("../images/butcherpaper.jpg")
-}
+/* .menu {
+	background: url("../images/brochurefront.png")
+}  */
 
 .list-container ul {
 	display: flex;
@@ -309,7 +308,7 @@ img.revealer {
 }
 
 .list-container li {
-	padding: 20px 50px;
+	padding:;
 	font-family: 'Nunito';
 	font-size: 32px;
 	margin-bottom: 10px;
@@ -572,6 +571,12 @@ form input:focus, form textarea:focus {
 @media screen and (max-width: 767px){
 	.playgrounds, .curtain {
 		display: none;
+	}
+	.about-container {
+		flex-direction: column;
+	}
+	.about-us {
+		font-size: 18px;
 	}
 }
 @media screen and (min-width: 768px){
