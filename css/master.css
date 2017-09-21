@@ -49,6 +49,17 @@ table {
   margin-top: 100px;
 }
 
+h1 {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2em;
+	padding: 20px 0px;
+	margin-bottom: 50px;
+	background: #404040;
+	color: white;
+}
+
 /* Nav */
 nav {
 	display: flex;
@@ -473,14 +484,13 @@ img.revealer {
 	display: none;
 }
 
-.small .header {
-	/*color: #fffc7c;*/
-	/*background-color: #004c4c;*/
+.review .header {
+	margin-bottom: 0px;
 }
 
-.form .header {
-	/*color: #004c4c;*/
-	/*background-color: #fffc7c;*/
+.small .header, .form .header {
+	color: #fffc7c;
+	background-color: #004c4c;
 }
 
 form div {
