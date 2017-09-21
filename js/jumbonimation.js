@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-  $('.left').animate({'left':'100%'})
-  $('.right').animate({'right':'100%'})
+  $('.left').animate({'width':'0%'})
+  $('.right').animate({'width':'0%'})
   $('.icon').addClass('peek');
 
   $('.playgrounds h2').delay(1500).animate({'top':'13%'})
