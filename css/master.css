@@ -56,9 +56,9 @@ h1 {
 	text-transform: uppercase;
 	font-size: 2em;
 	padding: 20px 0px;
-	margin-bottom: 50px;
-	background: #404040;
-	color: white;
+	margin-bottom: 30px;
+	background: ;
+	color: black;
 }
 
 /* Nav */
@@ -425,7 +425,7 @@ img.revealer {
 	font-family: 'nunito';
 	color: #ffffff;
 	font-size: 20px;
-	background: #C59655;
+	background: #B99364;
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
 	width: 160px;
