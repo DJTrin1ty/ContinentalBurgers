@@ -1,4 +1,4 @@
-/* Reset File */
+Reset File
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,6 +47,7 @@ table {
 
 .component {
   margin-top: 100px;
+  overflow: hidden;
 }
 
 h1 {
@@ -291,37 +292,68 @@ img.revealer {
 
 .about-container {
 	display: flex;
-	width: 70%;
+	align-items: center;
+	width: 80%;
 	margin: 0 auto;
+	justify-content: space-around;
 }
 
 .about-us {
 	font-family: 'Nunito';
-	font-size: 24px;
+	font-size: 28px;
 	width:50%;
-	margin: 0 auto;
-	line-height: 35px;
+	padding: 30px;
+	line-height:35px;
+	opacity: 0;
+}
+
+.image-slider {
+	width:50%;
+	max-width: 600px;
+	max-height: 400px;
+	opacity: 0;
+	overflow: hidden;
 }
 
 .image-slider img{
 	width: 100%;
 }
 
+.slides {
+	display: block;
+	width: 6000px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+
+.slide {
+	float: left;
+	list-style-type: none;
+	width: 600px;
+	height: 400px;
+}
+
 /* Menu */
 
-/* .menu {
-	background: url("../images/brochurefront.png")
-}  */
+.menu {
+	background: url("../images/menubackground.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}  
 
 .list-container ul {
 	display: flex;
-	justify-content: center;
+	padding: 20px;
+	justify-content: space-around;
 }
 
 .list-container li {
-	padding:;
-	font-family: 'Nunito';
-	font-size: 32px;
+	font-family: 'overlock';
+	font-size: 36px;
+	font-weight:600;
 	margin-bottom: 10px;
 }
 
@@ -335,11 +367,11 @@ img.revealer {
 }
 
 .menu-list li {
-	font-family: 'Nunito';
+	font-family: 'overlock';
+	font-weight: 500;
 	font-size: 24px;
 	line-height: 25px;
-	font-weight: 500;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .menu-container {
@@ -347,30 +379,29 @@ img.revealer {
 }
 
 .menu-container ul li {
-	color: #a77a33;
+	color: black;
 }
 
 .description {
-	font-family: 'Nunito';
+	font-family: 'overlock';
 	font-size: 18px;
-	font-weight: 200;
 	font-style: italic;
 	color: #575757;
 }
 
 .menu-header {
-	font-family: 'Nunito';
-	font-size: 36px;
-	font-weight: 500;
-	margin-top: 40px;
-	margin-bottom: 28px;
+	font-family: 'overlock';
+	font-size: 32px;
+	font-weight: 600;
+	margin-top: 25px;
+	margin-bottom: 15px;
 }
 
 .menu-note {
-	font-family: 'Nunito';
-	font-size: 18px;
+	font-family: 'overlock';
+	font-size: 20px;
 	font-weight: 500;
-	color: #575757;
+	color: #474747;
 	font-style: italic;
 }
 
@@ -385,6 +416,36 @@ img.revealer {
 .menu-spacer {
 	margin: 0 100px;
 }
+
+
+.btn {
+	-webkit-border-radius: 15;
+	-moz-border-radius: 15;
+	border-radius: 15px;
+	font-family: 'nunito';
+	color: #ffffff;
+	font-size: 20px;
+	background: #C59655;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	width: 160px;
+	height: 25px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 40px;
+  }
+  
+  .btn:hover {
+	background: #bd9353;
+	background-image: -webkit-linear-gradient(top, #bd9353, #ccaa7a);
+	background-image: -moz-linear-gradient(top, #bd9353, #ccaa7a);
+	background-image: -ms-linear-gradient(top, #bd9353, #ccaa7a);
+	background-image: -o-linear-gradient(top, #bd9353, #ccaa7a);
+	background-image: linear-gradient(to bottom, #bd9353, #ccaa7a);
+	text-decoration: none;
+	cursor: pointer;
+  }
 
 /* Contact */
 .contact {
@@ -577,16 +638,21 @@ form input:focus, form textarea:focus {
 	.ninfo p {
 		font-size: 13px;
 	}
+	.list-container ul {
+		flex-direction: column;
+	}
 }
 @media screen and (max-width: 767px){
 	.playgrounds, .curtain {
 		display: none;
 	}
-	.about-container {
-		flex-direction: column;
-	}
 	.about-us {
 		font-size: 18px;
+		width:100%;
+		min-width: 350px;
+	}
+	.image-slider {
+		min-width: 350px;
 	}
 }
 @media screen and (min-width: 768px){
@@ -608,6 +674,24 @@ form input:focus, form textarea:focus {
 	.jumbotron {
 		display: flex;
 		height: 100vh;
+	}
+}
+
+@media screen and (max-width: 1023px){
+	.about-container {
+		flex-direction: column;
+	}
+	.about-us {
+		width: 100%;
+	}
+	.image-slider {
+		width: 100%;
+		max-width: 75%;
+		max-height: 75%;
+	}
+	.list-container ul {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
