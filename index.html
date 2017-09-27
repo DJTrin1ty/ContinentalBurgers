@@ -83,6 +83,7 @@
             <li class="slide"><img src="images/platter3.png"></li>
             <li class="slide"><img src="images/platter4.jpg"></li>
             <li class="slide"><img src="images/platter5.jpg"></li>
+            <li class="slide"><img src="images/platter1.jpg"></li>
           </ul>
         </div>
       </div>
@@ -93,7 +94,7 @@
       <div class="list-container">
         <ul>
           <li><a class="breakfast-btn">BREAKFAST</a></li>
-          <li><a class="burgers-btn">BURGERS & SANDWICHES</a></li>
+          <li><a class="burgers-btn">BURGERS</a></li>
           <li><a class="platters-btn">PLATTERS</a></li>
           <li><a class="sideorders-btn">SIDE ORDERS</a></li>
         </ul>
@@ -155,9 +156,7 @@
         </div>
         <div class="burgers hidden">
           <div class="menu-container">
-            <div class="menu-header">Sandwiches
-              <div class="menu-note"> Make it a combo for $3 more!</div>
-            </div>
+            <div class="menu-header">Sandwiches</div>
               <ul>
                 <li>Pastrami<p class="description">Mustard and pickles on a French roll</p></li>
                 <li>Rib-Eye Steak<p class="description">Mayo, lettuce and tomatoes on a French roll</p></li>
@@ -179,9 +178,7 @@
               </ul>
           </div>
           <div class="menu-container">
-            <div class="menu-header">Burgers
-              <div class="menu-note"> Make it a combo for $3 more!</div>
-            </div>
+            <div class="menu-header">Burgers</div>
               <ul>
                 <li>Continental Hamburger<p class="description"></p></li>
                 <li>1/4 Lb. Hamburger<p class="description">Thousand island sauce, onions, lettuce, tomatoes and pickles</p></li>
@@ -255,7 +252,7 @@
           </div>
         </div>
         <div class="side-orders hidden">
-          <div class="menu-container menu-spacer">
+          <div class="menu-container">
             <div class="menu-header">Side Orders</div>
               <ul>
                 <li>Fries<p class="description"></p></li>
@@ -270,7 +267,7 @@
                 <li>Fried Mushrooms<p class="description"></p></li>
               </ul>
           </div>
-          <div class="menu-container menu-spacer">
+          <div class="menu-container">
             <div class="menu-header">Breakfast Side Orders</div>
               <ul>
                 <li>(1) Egg<p class="description"></p></li>
@@ -289,7 +286,15 @@
           </div>
         </div>
       </div>
-      <div class="btn hidden">Download Menu</div>
+      <div>
+        <button id="modalBtn" type="button" class="button hidden">Full Menu</button>
+      </div>
+      <div id="simpleModal" class="modal">
+        <div class="modal-content">
+          <img class="modal-menu1" src="images/fullmenu.png">
+          <span class="closeBtn">&times;</span>
+        </div>
+      </div>
     </div>
 
     <div class="contact component">
@@ -351,5 +356,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./js/jumbonimation.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

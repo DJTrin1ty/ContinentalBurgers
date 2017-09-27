@@ -140,7 +140,7 @@ nav li:hover {
 	height: 0;
 	font-family: 'Cantata One';
 	text-transform: uppercase;
-	width: 100vw;
+	/* width: 100vw; */
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -153,7 +153,7 @@ nav li:hover {
 
 .mobiletron {
 	height: 94vh;
-	width: 100vw;
+	/* width: 100vw; */
 	margin: 2vh 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -300,23 +300,18 @@ img.revealer {
 
 .about-us {
 	font-family: 'Nunito';
-	font-size: 28px;
+	font-size: 24px;
 	width:50%;
-	padding: 30px;
+	padding: 50px;
 	line-height:35px;
 	opacity: 0;
 }
 
 .image-slider {
-	width:50%;
-	max-width: 600px;
-	max-height: 400px;
+	width: 600px;
+	height: 400px;
 	opacity: 0;
 	overflow: hidden;
-}
-
-.image-slider img{
-	width: 100%;
 }
 
 .slides {
@@ -382,6 +377,10 @@ img.revealer {
 	color: black;
 }
 
+.side-orders .menu-container{
+	padding: 35px;
+}
+
 .description {
 	font-family: 'overlock';
 	font-size: 18px;
@@ -413,39 +412,69 @@ img.revealer {
 	display: flex;
 }
 
-.menu-spacer {
-	margin: 0 100px;
-}
+/* Button */
 
-
-.btn {
-	-webkit-border-radius: 15;
-	-moz-border-radius: 15;
-	border-radius: 15px;
+.button {
+	border-radius: 10px;
 	font-family: 'nunito';
 	color: #ffffff;
 	font-size: 20px;
-	background: #B99364;
-	padding: 10px 20px 10px 20px;
+	background: #BE9E7E;
+	padding: 10px 25px 10px 35px;
 	text-decoration: none;
 	width: 160px;
-	height: 25px;
-	margin: 0 auto;
+	height: 50px;
+	margin: auto;
 	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 40px;
-  }
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
   
-  .btn:hover {
-	background: #bd9353;
-	background-image: -webkit-linear-gradient(top, #bd9353, #ccaa7a);
-	background-image: -moz-linear-gradient(top, #bd9353, #ccaa7a);
-	background-image: -ms-linear-gradient(top, #bd9353, #ccaa7a);
-	background-image: -o-linear-gradient(top, #bd9353, #ccaa7a);
-	background-image: linear-gradient(to bottom, #bd9353, #ccaa7a);
+.button:hover {
+	background: #C9A777;
 	text-decoration: none;
 	cursor: pointer;
-  }
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color:rgba(0,0,0,0.3);
+}
+
+.modal-content {
+	display: flex;
+	justify-content: space-around;
+	animation-name: modalopen;
+	animation-duration: 2s;
+}
+
+.closeBtn {
+	color: black;
+	float: right;
+	position: absolute;
+	font-size: 40px;
+	top: 20px;
+	right: 35px;
+	z-index: 5;
+}
+
+.closeBtn:Hover, .closeBtn:focus {
+	color: #585858;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@keyframes modalopen {
+	from {opacity: 0}
+	to {opacity: 1}
+}
 
 /* Contact */
 .contact {
@@ -550,8 +579,8 @@ img.revealer {
 }
 
 .small .header, .form .header {
-	color: #fffc7c;
-	background-color: #004c4c;
+	color: #ffffff;
+	background-color: #BE9E7E ;
 }
 
 form div {
@@ -620,6 +649,7 @@ form input:focus, form textarea:focus {
 
 
 /* Responsive */
+
 @media screen and (max-width: 500px){
 	div.minfo > p {
 		font-size: 10px;
@@ -641,7 +671,28 @@ form input:focus, form textarea:focus {
 	.list-container ul {
 		flex-direction: column;
 	}
+
+	.menu-container li {
+		font-size: 18px;
+	}
+
+	.description {
+		font-size: 14px;
+	}
+
+	.about-us {
+		font-size: 18px;
+	}
+
+	.side-orders .menu-container {
+		padding: 0;
+	}
+
+	.image-slider {
+		display: none;
+	}
 }
+
 @media screen and (max-width: 767px){
 	.playgrounds, .curtain {
 		display: none;
@@ -651,10 +702,8 @@ form input:focus, form textarea:focus {
 		width:100%;
 		min-width: 350px;
 	}
-	.image-slider {
-		min-width: 350px;
-	}
 }
+
 @media screen and (min-width: 768px){
 	.quad {
 		flex-direction: row;
@@ -684,14 +733,12 @@ form input:focus, form textarea:focus {
 	.about-us {
 		width: 100%;
 	}
-	.image-slider {
-		width: 100%;
-		max-width: 75%;
-		max-height: 75%;
-	}
 	.list-container ul {
 		flex-direction: column;
 		align-items: center;
+	}
+	.button {
+		display: none;
 	}
 }
 
