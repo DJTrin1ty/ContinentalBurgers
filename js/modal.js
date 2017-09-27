@@ -7,6 +7,7 @@ let modalBtn = document.getElementById('modalBtn');
 // Get close modal button
 let closeBtn = document.getElementsByClassName('closeBtn')[0];
 
+let menu = document.getElementsByClassName('modal-content')[0];
 
 // Listen for open click
 modalBtn.addEventListener('click', openModal);
@@ -31,7 +32,7 @@ function closeModal() {
 
 // Function to close modal with outside click
 function outsideClick(e) {
-    if(e.target == modal) {
+    if(e.target == menu) {
         modal.style.display = 'none';
     }
 }

@@ -450,7 +450,7 @@ img.revealer {
 
 .modal-content {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	animation-name: modalopen;
 	animation-duration: 2s;
 }
@@ -462,7 +462,6 @@ img.revealer {
 	font-size: 40px;
 	top: 20px;
 	right: 35px;
-	z-index: 5;
 }
 
 .closeBtn:Hover, .closeBtn:focus {
